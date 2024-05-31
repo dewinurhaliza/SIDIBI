@@ -1,0 +1,62 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 17px;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    width: 1000px;
+    margin: auto;
+}
+nav {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: fixed;
+    line-height: 60px;
+    width: 100%;
+    background-color: #4D869C;
+}
+nav.putih {
+    background-color: white;
+}
+nav .brand {
+    font-size: 28px;
+    float: left;
+    position: relative;
+    line-height: 60px;
+    font-weight:bold;
+}
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+nav ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    padding: 30px 0px 30px 0px;
+    background-color: #4D869C;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengaduan Barang</title>
+</head>
+<body>
+    <h2>Form Pengaduan Barang Rusak/Habis di Supermarket</h2>
+    <form action="pengaduan.php" method="post">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br>
+        
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" required></textarea><br>
+        
+        <label for="kontak">Nomor Kontak:</label><br>
+        <input type="text" id="kontak" name="kontak" required><br>
+        
+        <label for="deskripsi_barang">Deskripsi Barang:</label><br>
+        <textarea id="deskripsi_barang" name="deskripsi_barang" required></textarea><br>
+        
+        <label for="lokasi">Lokasi:</label><br>
+        <input type="text" id="lokasi" name="lokasi" required><br>
+        
+        <label for="waktu">Waktu Kejadian:</label><br>
+        <input type="datetime-local" id="waktu" name="waktu" required><br>
+        
+        <label for="bukti">Bukti Pendukung:</label><br>
+        <input type="file" id="bukti" name="bukti"><br>
+        
+        <label for="tindakan">Tindakan yang Diinginkan:</label><br>
+        <textarea id="tindakan" name="tindakan" required></textarea><br>
+        
+        <input type="submit" value="Kirim Pengaduan">
+    </form>
+</body>
+</html>

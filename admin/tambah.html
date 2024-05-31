@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background: #7469B6;
+            color: white;
+            border: 0;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: #AD88C6;
+        }
+    </style>
+</head>
+<body>   
+    <nav>
+        <div class="navbar">
+          <div class="brand">
+              SIDIBI
+          </div>
+          <div class="menu">
+            <a href="#" class="tombol-menu">
+              <span class="garis"></span>
+              <span class="garis"></span>
+              <span class="garis"></span>
+            </a>
+            <ul>
+              <li><a href="pegawai.php">Pegawai</a></li>
+              <li><a href="shift.php">Shift</a></li>
+              <li><a href="pengaduan.html">Pengaduan</a></li>
+              <li><a href="status_cuti.php">Cuti</a></li>
+              <li><a href="profil.html">Profil</a></li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <div class="container">
+        <h1>Form Tambah Data Pegawai</h1>
+        <form action="tambah.php" method="post">
+            <label for="nama">Nama Pegawai:</label>
+            <input type="text" name="nama" required>
+
+            <label for="jeniskelamin">Jenis Kelamin:</label>
+            <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+            <input type="radio" name="jk" value="Perempuan"> Perempuan
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" name="alamat" required>
+
+            <label for="jabatan">Jabatan:</label>
+            <select name="jabatan" required>
+                <option value="Staf Kasir">Staf Kasir</option>
+                <option value="Staf Gudang">Staf Gudang</option>
+            </select>
+
+            <label for="gaji">Gaji:</label>
+            <input type="text" name="gaji">
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+    <form action="tambah.php" method="post">
+        <table>
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <td>Jabatan:</td>
+                <td>
+                    <select name="jabatan">
+                        <option value="Staf Kasir">Staf Kasir</option>
+                        <option value="Staf Gudang">Staf Gudang</option>
+                    </select>
+                </td>
+            </tr>            
+            <tr>
+                <td>Gaji:</td>
+                <td><input type="text" name="gaji"></td>
+            </tr>
+        </table>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
