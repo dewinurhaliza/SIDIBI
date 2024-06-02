@@ -43,7 +43,7 @@ $result = mysqli_query($mysqli, $sql);
             background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
             background-position: center;
             background-size: cover;
-            height: 100vh;
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,7 +51,7 @@ $result = mysqli_query($mysqli, $sql);
 
         .navbar-ku {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             height: 75px;
             display: flex;
             align-items: center;
@@ -63,25 +63,31 @@ $result = mysqli_query($mysqli, $sql);
         }
 
         .logo {
+            display: flex;
+            align-items: center;
             color: #ff7200;
-            font-size: 5px;
+            font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 10vh;
+            font-weight: bold;
         }
 
         .logo img {
             width: 24vh;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         .menu {
             display: flex;
             align-items: center;
-            padding-top: 18px;;
+            /* padding-top: 18px;; */
         }
 
         ul {
             display: flex;
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         ul li {
@@ -109,22 +115,23 @@ $result = mysqli_query($mysqli, $sql);
             height: auto;
             margin: auto;
             color: #fff;
-            position: relative;
+            /* position: relative; */
       }
 
       .content h1 {
         font-family: "Poppins", sans-serif;
         font-size: 50px;
         font-weight: 600;
-        padding-left: 20px;
-        letter-spacing: 2px;
+        /* padding-left: 20px;
+        letter-spacing: 2px; */
         margin-bottom: 30px;
       }
       .content .par {
-        padding-left: 20px;
-        padding-bottom: 25px;
+        /* padding-left: 20px;
+        padding-bottom: 25px; */
         letter-spacing: 1.2px;
         line-height: 30px;
+        margin-bottom: 20px;
       }
       
       .content span {
@@ -135,6 +142,8 @@ $result = mysqli_query($mysqli, $sql);
         .jadwal h2 {
             font-size: 30px;
             text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
         }
 
         .tabel-jadwal {
@@ -142,13 +151,31 @@ $result = mysqli_query($mysqli, $sql);
         }
 
         table {
-            background-color:#fff;
+            background-color: #fff;
             color: #000;
-            padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            width: 100%;
+            max-width: 1050px;
+            margin: auto;
+            text-align: center;
         }
+        
+        table th, table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #ff7200;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        
     </style>
 </head>
 <body>
