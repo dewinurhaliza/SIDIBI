@@ -174,7 +174,14 @@ $result = mysqli_query($mysqli, $sql);
         table tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-        
+
+        footer {
+            text-align: center;
+            background-color: #ff7200;
+            color: #fff;
+            height: 60px;
+            padding: 15px;
+        }
         
     </style>
 </head>
@@ -240,6 +247,8 @@ $result = mysqli_query($mysqli, $sql);
             </div>
         </div>
     </div>
-    
+    <footer>
+      <p>&copy; 2024 Sistem Informasi Pegawai SIDIBI.</p>
+    </footer>
 </body>
 </html>
