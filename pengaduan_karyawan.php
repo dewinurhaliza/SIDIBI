@@ -39,18 +39,19 @@ $mysqli->close();
 
         .main {
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            /* background-position: center; */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            background-position: center;
             background-size: cover;
-            height: 700px;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
         .navbar-ku {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             height: 75px;
             display: flex;
             align-items: center;
@@ -62,25 +63,31 @@ $mysqli->close();
         }
 
         .logo {
+            display: flex;
+            align-items: center;
             color: #ff7200;
-            font-size: 5px;
+            font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 10vh;
+            font-weight: bold;
         }
 
         .logo img {
             width: 24vh;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         .menu {
             display: flex;
             align-items: center;
-            padding-top: 18px;;
+            /* padding-top: 18px;; */
         }
 
         ul {
             display: flex;
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         ul li {
@@ -102,18 +109,20 @@ $mysqli->close();
             color: #000;
         }
         .container {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #ffff;
+            background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 100%;
-            margin-top: 350px;
         }
-
+        
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
 
         .form-group {
             margin-bottom: 15px;
@@ -121,6 +130,7 @@ $mysqli->close();
         .form-group label {
             display: block;
             margin-bottom: 5px;
+            color: black;
         }
         .form-group input, .form-group textarea {
             width: 100%;
@@ -152,6 +162,14 @@ $mysqli->close();
         .message.error {
             color: #dc3545;
         }
+
+        footer {
+            text-align: center;
+            background-color: #ff7200;
+            color: #fff;
+            height: 60px;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
@@ -169,7 +187,7 @@ $mysqli->close();
     </div>
     <div class="main">
         <div class="container">
-            <h2>Form Pengaduan Pegawai</h2>
+            <h1>Form Pengaduan Pegawai</h1>
             <?php
             if (isset($success)) {
                 echo "<p class='message success'>$success</p>";
@@ -201,6 +219,10 @@ $mysqli->close();
             </form>
         </div>
     </div>
+
+    <footer>
+      <p>&copy; 2024 Sistem Informasi Pegawai SIDIBI.</p>
+    </footer>
     
 </body>
 </html>
